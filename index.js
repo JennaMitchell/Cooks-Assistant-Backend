@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
-dotenv.config({ path: "./vars.env" });
+dotenv.config();
 
 const recipeRoute = require("./routes/recipe-routes");
 const authRoutes = require("./routes/auth");
